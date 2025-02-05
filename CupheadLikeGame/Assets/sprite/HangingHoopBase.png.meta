@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HangingHoopBase_0: -619778323246379191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

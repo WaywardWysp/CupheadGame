@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrampEyes_0: -4042721181904504346
+      TrampEyes_1: -7490943156473278604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

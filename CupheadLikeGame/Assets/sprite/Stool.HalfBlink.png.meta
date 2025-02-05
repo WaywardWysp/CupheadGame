@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stool.HalfBlink_0: 179534427271716874
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

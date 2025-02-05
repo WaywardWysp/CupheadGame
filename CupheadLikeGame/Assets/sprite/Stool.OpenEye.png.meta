@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stool.OpenEye_0: 1642540522193573391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

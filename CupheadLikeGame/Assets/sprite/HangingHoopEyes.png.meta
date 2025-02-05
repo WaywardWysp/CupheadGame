@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HangingHoopEyes_0: -4186336367782329282
+      HangingHoopEyes_1: -3253683937083594745
+      HangingHoopEyes_2: 5432341110938500111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -45,6 +45,21 @@ public class PlayerHealth : MonoBehaviour
         {
             healthText.text = "Health: " + currentHealth; // Display health
         }
+        if (PlayerPrefs.GetInt("HardMode", 0) == 1)
+        {
+            maxHealth = 1;
+        }
+        else if (PlayerPrefs.GetInt("EasyMode", 0) == 1)
+        {
+            maxHealth = 30;
+        }
+        else
+        {
+            maxHealth = 3;
+        }
+
+        currentHealth = maxHealth;
+        UpdateHealthUI();
     }
 
     private void Die()

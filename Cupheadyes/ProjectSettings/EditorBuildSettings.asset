@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Jungle.unity
+    guid: 206dd7e098a80884ba86ddb4a874496c
+  - enabled: 1
+    path: Assets/Scenes/Circus.unity
+    guid: 86c0e534a9f31e84eb1f53c3b483fe83
   m_configObjects: {}

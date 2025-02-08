@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - enemy
+  - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -44,4 +46,7 @@ TagManager:
     locked: 0
   - name: Not Background
     uniqueID: 2043404133
+    locked: 0
+  - name: not background above pier
+    uniqueID: 148160085
     locked: 0

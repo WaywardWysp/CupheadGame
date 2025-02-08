@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro; // TextMeshPro, you know how this works
 
 public class PlayerHealth : MonoBehaviour
@@ -18,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;  // Set health to full
         UpdateHealthUI();  // Initialize
+       
     }
 
     // Call this when the player takes damage
@@ -45,18 +49,7 @@ public class PlayerHealth : MonoBehaviour
         {
             healthText.text = "Health: " + currentHealth; // Display health
         }
-        if (PlayerPrefs.GetInt("HardMode", 0) == 1)
-        {
-            maxHealth = 1;
-        }
-        else if (PlayerPrefs.GetInt("EasyMode", 0) == 1)
-        {
-            maxHealth = 30;
-        }
-        else
-        {
-            maxHealth = 3;
-        }
+        
 
         currentHealth = maxHealth;
         UpdateHealthUI();
@@ -64,8 +57,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player has died!");
-        // This is just a place for future game over screen
+        SceneManager.LoadSceneAsync("loss");
+
     }
 
     private System.Collections.IEnumerator InvincibilityPeriod()

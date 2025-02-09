@@ -2133,6 +2133,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5143250063049394115, guid: 0fe5a128d57fae447adb5103728240b4, type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 1204996089}
+    - target: {fileID: 1790154676561068841, guid: 0fe5a128d57fae447adb5103728240b4, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107520421091514622, guid: 0fe5a128d57fae447adb5103728240b4, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107520421091514622, guid: 0fe5a128d57fae447adb5103728240b4, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369949547400206529, guid: 0fe5a128d57fae447adb5103728240b4, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 983090298}
     - target: {fileID: 2973970619046454530, guid: 0fe5a128d57fae447adb5103728240b4, type: 3}
       propertyPath: m_Name
       value: Player

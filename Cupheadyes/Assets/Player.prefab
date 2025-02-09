@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8003895091936414626}
   - component: {fileID: 8847681483831550784}
-  - component: {fileID: 5374239920423231888}
   - component: {fileID: 7083668090732154674}
   - component: {fileID: 2107520421091514622}
-  - component: {fileID: 4261488926354109520}
-  - component: {fileID: 4869693438773501317}
+  - component: {fileID: 5032803434941508342}
+  - component: {fileID: 1790154676561068841}
+  - component: {fileID: -5143250063049394115}
+  - component: {fileID: 2369949547400206529}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -89,36 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5374239920423231888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2973970619046454530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceaa531787430f9458be07fd43148e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 8
-  acceleration: 10
-  deceleration: 12
-  airControl: 0.6
-  jumpForce: 8
-  jumpCutMultiplier: 0.5
-  coyoteTime: 0.15
-  jumpBufferTime: 0.15
-  normalGravity: 1.94
-  fallGravityMultiplier: 1.52
-  maxFallSpeed: -20
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  groundCheckOffset: 0.1
-  groundCheckThickness: 0.1
-  audioSource: {fileID: 0}
-  jumpSound: {fileID: 0}
 --- !u!61 &7083668090732154674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,7 +162,74 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4261488926354109520
+--- !u!95 &5032803434941508342
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2973970619046454530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e5c4cc6d29ef1145ad56a2949a559da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1790154676561068841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2973970619046454530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70becff8471385c4db3948630e8e35dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  acceleration: 10
+  deceleration: 12
+  airControl: 0.6
+  jumpForce: 8
+  jumpCutMultiplier: 0.5
+  coyoteTime: 0.15
+  jumpBufferTime: 0.15
+  normalGravity: 1.6
+  fallGravityMultiplier: 1
+  maxFallSpeed: -20
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheckOffset: 0.1
+  groundCheckThickness: 0.1
+  crouchHeightMultiplier: 0.5
+  audioSource: {fileID: 0}
+  jumpSound: {fileID: 0}
+--- !u!114 &-5143250063049394115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2973970619046454530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a3da0f198893040b86453da68e48ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  healthText: {fileID: 0}
+  invincibilityTime: 1
+--- !u!114 &2369949547400206529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,18 +244,3 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   projectileSpeed: 10
   spawnOffsetY: 1
---- !u!114 &4869693438773501317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2973970619046454530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecaf63073b24e1a4e8cfe7df2c164144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 3
-  healthText: {fileID: 0}
-  invincibilityTime: 1
